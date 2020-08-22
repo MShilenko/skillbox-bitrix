@@ -88,4 +88,20 @@ $arUrlRewrite=array (
     'PATH' => '/news/index.php',
     'SORT' => 100,
   ),
+  11 => 
+  array (
+    'CONDITION' => '#^/catalog_new/([0-9a-zA-Z_-]+)/item/([0-9a-zA-Z_-]+)/[?]{0,1}(.*)#',
+    'RULE' => 'SECTION_CODE=$1&ELEMENT_CODE=$2',
+    'ID' => '',
+    'PATH' => '/catalog_new/detail.php',
+    'SORT' => 100,
+  ),  
+  12 => 
+  array (
+    'CONDITION' => '#^/catalog_new/([0-9a-zA-Z_-]+)/[?]{0,1}(.*)#',
+    'RULE' => 'SECTION_CODE=$1',
+    'ID' => '',
+    'PATH' => '/catalog_new/index.php',
+    'SORT' => 100,
+  ),
 );
